@@ -23,9 +23,12 @@ db.on("error", function(error) {
   console.log("Database Error:", error);
 });
 
+
+
+
 // Main route (simple Hello World Message)
 app.get("/", function(req, res) {
-  res.send("LA Times Scraper");
+  res.render("index");
 });
 
 // Retrieve data from the db
