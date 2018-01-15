@@ -1,13 +1,17 @@
 <div class="container">
-  <h1>Articles</h1>
+  <h1>LA Times</h1>
 
+<button class="btn primary-btn" id="new-scrape">Scrape new articles</button>
+
+<button class="btn secondary-btn" id="saved-articles">Saved Articles</button>
+  
   <div class="articles">
     <ul>
-      {{#each results}}
+      {{#each inserted}}
           Title: {{title}}
           Link: {{link}}
       {{/each}}
     </ul>
   </div>
-  
+
 </div>
